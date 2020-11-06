@@ -754,8 +754,7 @@ pre {
 }
 
 .projects-feed .project .overlay {
-    background: #ffffff;
-    background: rgba(125, 125, 125, 0.25);
+    background: #5e3ebd;
     height: 100%;
     opacity: 0;
     position: absolute;
@@ -769,7 +768,7 @@ pre {
 }
 
 .no-touch .projects-feed .project a:hover .overlay {
-    opacity: 1;
+    opacity: 0.25;
 }
 
 .projects-feed .project-content-container {
@@ -1131,18 +1130,37 @@ nav[role="navigation"] {
 /*===== News =====*/
 
 .header {
-    padding: 80px 50px;
-    position: sticky;
-    position: -webkit-sticky;
+    position: relative;
+    margin: 0px;
 }
 
-.news .blog_item:nth-child(odd) {
+.header h1 {
+    padding: 80px 30px;
+    margin: 0px;
+}
+
+.head {
+    width: 50%;
+    float: right;
+}
+
+.descImg,
+.descImg1 {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    z-index: -5;
+    margin: 0px !important;
+}
+
+
+/* .news .blog_item:nth-child(odd) {
     background: #90D4C5;
 }
 
 .news .blog_item:nth-child(even) {
     background: #fafbfb;
-}
+} */
 
 .blog_item {
     padding: 80px 50px;
@@ -1193,7 +1211,7 @@ nav[role="navigation"] {
 
 .blog_item:hover {
     color: #fff;
-    background: #000;
+    background: #5e3ebd;
 }
 
 .blog_item:hover h1,

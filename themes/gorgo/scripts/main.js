@@ -23,16 +23,56 @@ window.onload = () => {
     // $(".thumb").css({height: '370px'})
     $(".project:nth-child(odd) img").css({ height: $(".project-content-container")[0].scrollHeight + 'px' })
 
+
+
+    //bottom image + footer
+    $(".descImg").css({ top: $(".page-desc").last().offset().top + 'px' })
+    $(".descImg").css({ height: $(".page-desc").last()[0].offsetHeight + $(".site-footer")[0].clientHeight + 'px' })
+
+    // about image 
+
+
+    $(".descImg1").css({ top: $(".page-desc").first().offset().top + 'px' })
+    $(".descImg1").css({ height: $(".page-desc")[0].offsetHeight + 'px' })
+
+
+
 };
+
+$(function() {
+
+    var timer_id;
+
+    $(window).resize(function() {
+
+        clearTimeout(timer_id);
+
+        timer_id = setTimeout(function() {
+
+            $(".project:nth-child(odd) img").css({ height: $(".project-content-container")[0].scrollHeight + 'px' })
+
+
+            $(".descImg").css({ top: $(".page-desc").last().offset().top + 'px' })
+            $(".descImg").css({ height: $(".page-desc").last()[0].offsetHeight + $(".site-footer")[0].clientHeight + 'px' })
+
+
+
+            $(".descImg1").css({ top: $(".page-desc").first().offset().top + 'px' })
+            $(".descImg1").css({ height: $(".page-desc")[0].offsetHeight + 'px' })
+
+
+
+        }, 300);
+    });
+});
 
 $(window).resize = () => {
-    console.log($(".project-content-container")[0].scrollHeight)
-        // $(".thumb").css({height: '370px'})
-    $(".project:nth-child(odd) img").css({ height: $(".project-content-container")[0].scrollHeight + 'px' })
+    console.log('hit')
+
 
 };
 
-var topOffset = new Array();
+
 
 
 ! function(a) {
