@@ -194,7 +194,7 @@ body.loaded,
 
 a,
 a:visited {
-    color: #90D4C5;
+    color: #ae9cf6;
     text-decoration: none;
     transition: color 0.1s ease-in-out;
 }
@@ -335,7 +335,7 @@ pre {
 .site-title {
     font-family: 'Righteous', helvetica, sans-serif;
     font-size: 26px;
-    color: #90D4C5;
+    color: #ae9cf6;
     line-height: 1.5em;
     position: relative;
     z-index: 12;
@@ -350,12 +350,12 @@ pre {
 
 .site-title a,
 .site-title a:visited {
-    color: #90D4C5;
+    color: #ae9cf6;
 }
 
 .site-title a:hover,
 .site-title a:active {
-    color: #90D4C5;
+    color: #ae9cf6;
     opacity: 0.8;
 }
 
@@ -378,7 +378,7 @@ pre {
 
 .site-tagline a,
 .site-tagline a:visited {
-    color: #90D4C5;
+    color: #ae9cf6;
 }
 
 .site-tagline a:hover {
@@ -420,7 +420,7 @@ pre {
 }
 
 .languages ul li a:hover {
-    color: #90D4C5;
+    color: #ae9cf6;
 }
 
 .languages ul li.active a {
@@ -896,7 +896,7 @@ div.image img {
 }
 
 .project-meta a:hover {
-    color: #90D4C5;
+    color: #5e3ebd;
 }
 
 .project-meta .tags {
@@ -984,8 +984,8 @@ nav[role="navigation"] {
 
 .cd-pagination .current {
     /* selected number */
-    background-color: #90D4C5;
-    border-color: #90D4C5;
+    background-color: #ae9cf6;
+    border-color: #ae9cf6;
     color: #ffffff;
     pointer-events: none;
 }
@@ -1365,7 +1365,7 @@ nav[role="navigation"] {
 }
 
 .site-footer a:hover {
-    color: #90D4C5;
+    color: #5e3ebd;
 }
 
 
