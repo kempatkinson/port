@@ -19,10 +19,16 @@ jQuery(document).ready(function($) {
 });
 
 
+
 window.onload = () => {
+
     // $(".thumb").css({height: '370px'})
     $(".project:nth-child(odd) img").css({ height: $(".project-content-container")[0].scrollHeight + 'px' })
 
+    // other projects
+    $("#oldProj").css({ height: $(".project-content-container")[0].scrollHeight + 'px' })
+    var margin = ($(".project-content-container")[0].scrollHeight - $("#oldProjHead")[0].scrollHeight) / 2
+    $("#oldProjHead").css("margin-top", margin + 'px')
 
 
     //bottom image + footer
@@ -49,12 +55,20 @@ $(function() {
 
         timer_id = setTimeout(function() {
 
+            // $(".thumb").css({height: '370px'})
             $(".project:nth-child(odd) img").css({ height: $(".project-content-container")[0].scrollHeight + 'px' })
 
+            // other projects
+            $("#oldProj").css({ height: $(".project-content-container")[0].scrollHeight + 'px' })
+            var margin = ($(".project-content-container")[0].scrollHeight - $("#oldProjHead")[0].scrollHeight) / 2
+            $("#oldProjHead").css("margin-top", margin + 'px')
 
+
+            //bottom image + footer
             $(".descImg").css({ top: $(".page-desc").last().offset().top + 'px' })
             $(".descImg").css({ height: $(".page-desc").last()[0].offsetHeight + $(".site-footer")[0].clientHeight + 'px' })
 
+            // about image 
 
 
             $(".descImg1").css({ top: $(".page-desc").first().offset().top + 'px' })
@@ -62,15 +76,11 @@ $(function() {
 
 
 
-        }, 300);
+
+        }, 100);
     });
 });
 
-$(window).resize = () => {
-    console.log('hit')
-
-
-};
 
 
 

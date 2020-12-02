@@ -1132,6 +1132,8 @@ nav[role="navigation"] {
 .header {
     position: relative;
     margin: 0px;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
 }
 
 .header h1 {
